@@ -1,2 +1,10 @@
-@use "./reset.css";
-@use "./normalize.css";
+@use "reset";
+@use "normalize";
+@use "fonts";
+@use "variables";
+
+body {
+  font-family: variables.$font-primary;
+  font-size: variables.$font-size-base;
+  font-weight: variables.$font-weight-regular;
+}
