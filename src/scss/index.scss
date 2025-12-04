@@ -1,10 +1,24 @@
-@use "reset";
 @use "normalize";
+@use "reset";
 @use "fonts";
 @use "variables";
+
+html {
+  margin: 0 auto;
+  padding: 85px 85px 0 85px;
+  max-width: 1250px;
+  background-color: #e7f6ff;
+}
 
 body {
   font-family: variables.$font-primary;
   font-size: variables.$font-size-base;
   font-weight: variables.$font-weight-regular;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.line {
+  border: 1px solid #eaeaea;
 }
