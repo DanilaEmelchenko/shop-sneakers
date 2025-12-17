@@ -1,0 +1,52 @@
+.sectionAllProducts {
+  margin-top: 39px;
+
+  & .productsDivTitle {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .allProductsCarts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    & .allProductsCart {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 20px 30px 35px 30px;
+      border: 1px solid #f3f3f3;
+      border-radius: 40px;
+      & .addToBookmarks {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+      }
+      & .allProductsCartMainPrice {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        & .allProductsCartPriceTitle {
+          font-weight: 500;
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #bdbdbd;
+          grid-row: 1 / 2;
+          align-self: end;
+        }
+        & .allProductsCartPrice {
+          font-weight: 700;
+          grid-row: 2 / 3;
+          align-self: start;
+        }
+        & .buttonAddToCart {
+          cursor: pointer;
+          grid-row: 1 / 3;
+        }
+      }
+    }
+  }
+}

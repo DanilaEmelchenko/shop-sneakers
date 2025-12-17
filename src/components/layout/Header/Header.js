@@ -61,8 +61,8 @@ export function header() {
     navLiImage.src = `${item.image}`;
     navLiImage.alt = `${item.alt}`;
 
-    navUl.append(navLi);
     navLi.append(navLiImage, navLiLink);
+    navUl.append(navLi);
   });
 
   logoLink.append(logoImage);
